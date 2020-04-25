@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <style>
     ul.nav li a,
@@ -18,6 +18,11 @@
     img {
         max-width: 400px;
     }
+
+    iframe {
+        max-width: 400px;
+        max-height: 300px;
+    }
 </style>
 
 <head>
@@ -31,17 +36,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#">Page 3</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    
     <div class="header text-center">
         <h1>Claire Adams</h1>
         <hr />
@@ -49,35 +44,123 @@
     </div>
 
     <div class="container">
-        <div id="home">
-            <div class="row">
-                <div class="text-center">
-                    <p>Hello!</p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <p>
-                        Welcome to my website! I am a software engineer, among other things. This site is to show off
-                        some of my work.
-                    </p>
-                </div>
-
-            </div>
-        </div>
+   
 
         <div id="projects" class="text-center">
             <h2>Projects</h2>
-            <div>
-                <h3>Connect Four in Python</h3>
-                <p>This project is a game of Connect Four written in Python.</p>
-                <p>View source code and documentation <a
-                        href="https://github.com/claire-1/Connect-Four/blob/master/cba2126-project-submission.ipynb">here.</a>
-                </p>
-                <img src="images/diagonalConnectFourRedWinner.gif">
+            <div class="row">
+                <div>
+                    
+                </div>
+                <div>
+                   
+                </div>
             </div>
         </div>
     </div>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Claire</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        ul.navbar-nav li a,
+        ul.navbar-nav li a:visited {
+            color: goldenrod;
+        }
+
+        ul.navbar-nav li a:hover,
+        ul.navbar-nav li a:active {
+            color: palevioletred;
+        }
+
+        ul.navbar-nav li.active a {
+            color: goldenrod;
+        }
+
+        img {
+            max-width: 400px;
+        }
+
+
+        body {
+            padding: 5%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="header text-center home">
+        <h1>Claire Adams</h1>
+        <hr />
+        <p class="text-left">
+            Welcome to my website! I am a software engineer, among other things. This site is to show off
+            some of my work.
+        </p>
+    </div>
+
+    </div>
+
+    <h2 class="text-center">Projects</h2>
+    <hr />
+    <div class="container-fluid projects">
+
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center">Connect Four in Python</h3>
+                <p>This project is a game of Connect Four written in Python.
+                    View source code and documentation <a
+                        href="https://github.com/claire-1/Connect-Four/blob/master/cba2126-project-submission.ipynb">here.</a>
+                </p>
+                <img src="images/diagonalConnectFourRedWinner.gif" class="rounded mx-auto d-block img-fluid"
+                    alt="Gif of connect four game">
+            </div>
+            <div class="col">
+                <h3 class="text-center">New Programming Language: Shoo</h3>
+                <p>This project is a group project from my Programming Languages and Translators class. It is a new
+                    programming language that we wrote primarly in OCaml.
+                    View the source code and documentation <a href="https://github.com/claire-1/shoo-lang">here.</a>
+                </p>
+                <iframe
+                    src="https://docs.google.com/presentation/d/e/2PACX-1vTUzXjWuU2FJ2zclhmLQ-5Zzb4xAF4vTQLIOWUMRjwO9uYXjsUJYhWdWR97-8-pc7cZNuWMvnbkYf30/embed?start=false&loop=false&delayms=3000"
+                    frameborder="0" width="460" height="290" allowfullscreen="true" mozallowfullscreen="true"
+                    webkitallowfullscreen="true" class="embed-responsive-item rounded mx-auto d-block"></iframe>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
