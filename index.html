@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    ul.nav li a,
+    ul.nav li a:visited {
+        color: white;
+    }
+
+    ul.nav li a:hover,
+    ul.nav li a:active {
+        color: goldenrod;
+    }
+
+    ul.nav li.active a {
+        color: goldenrod;
+    }
+
+    img {
+        max-width: 400px;
+    }
+</style>
+
+<head>
+    <title>Bootstrap Website Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="header text-center">
+        <h1>Claire Adams</h1>
+        <hr />
+
+    </div>
+
+    <div class="container">
+        <div id="home">
+            <div class="row">
+                <div class="text-center">
+                    <p>Hello!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <p>
+                        Welcome to my website! I am a software engineer, among other things. This site is to show off
+                        some of my work.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="projects" class="text-center">
+            <h2>Projects</h2>
+            <div>
+                <h3>Connect Four in Python</h3>
+                <p>This project is a game of Connect Four written in Python.</p>
+                <p>View source code and documentation <a
+                        href="https://github.com/claire-1/Connect-Four/blob/master/cba2126-project-submission.ipynb">here.</a>
+                </p>
+                <img src="images/diagonalConnectFourRedWinner.gif">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
