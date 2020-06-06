@@ -129,7 +129,6 @@ sub {
 
 img {
   border: 0;
-  max-height: 500px;
 }
 
 svg:not(:root) {
@@ -323,13 +322,21 @@ textarea {
 }
 
 a {
-  color: #428bca;
   text-decoration: none;
 }
+/* 
+a {
+  color: #428bca;
+  text-decoration: none;
+} */
 
-a:hover,
+/* a:hover,
 a:focus {
   color: #2a6496;
+  text-decoration: underline;
+} */
+a:hover,
+a:focus {
   text-decoration: underline;
 }
 
