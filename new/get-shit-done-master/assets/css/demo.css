@@ -1,4 +1,8 @@
 
+a{
+    color:orange;
+}
+
 .tim-container{
     background: #ffffff;
 
@@ -436,7 +440,7 @@
     content: '';
     width: 100%;
     height: 10px;
-    background: #47c650;
+    background: #a5b7bc;
     position: absolute;
     bottom: -10px;
     left: 0;
@@ -445,9 +449,9 @@
     z-index: 999;
   }
   
-  /* .hover-5 .hover-overlay {
-    background: rgba(0, 0, 0, 0.4);
-  } */
+  .hover-5 .hover-overlay {
+    background: rgba(0, 0, 0, 0.1);
+  } /* TODO here remove this to remove darkening of images */
   
   .hover-5-title {
     position: absolute;
@@ -461,13 +465,13 @@
   .hover-5-title span {
     transition: all 0.4s;
     opacity: 0;
-    color: #47c650;
+    color: #a5b7bc;
   }
   
   .hover-5:hover .hover-overlay {
     background: rgba(0, 0, 0, 0.8);
   }
-  
+
   .hover-5:hover .hover-5-title {
     bottom: 0;
   }
@@ -483,3 +487,17 @@
   .col-lg-6 {
       padding-bottom: 15px;
   }
+
+  .text-over-image {
+      color: #000000;
+      text-shadow: 1px 1px #a5b7bc;
+      background-color: orange;
+      width: 100%;
+      padding-left: 1px;
+      padding-right: 1px;
+  }
+  
+/* 
+  .navbar-header {
+      background-color: #7eacb4;
+  } */
