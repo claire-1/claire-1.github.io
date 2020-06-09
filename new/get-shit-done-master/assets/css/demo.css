@@ -450,7 +450,7 @@ a{
   }
   
   .hover-5 .hover-overlay {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.05);
   } /* TODO here remove this to remove darkening of images */
   
   .hover-5-title {

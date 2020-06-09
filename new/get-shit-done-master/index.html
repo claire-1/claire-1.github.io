@@ -22,6 +22,9 @@
   <!--     Font Awesome     -->
   <link href="bootstrap3/css/font-awesome.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+
+  <!-- Get dev posts -->
+  <script src="index.js"></script>
 </head>
 
 <body>
@@ -42,7 +45,7 @@
             <a href="TODO link to this website (home)">
               <div class="logo-container">
                 <div class="logo">
-                  <img src="assets/img/succulant.jpg">
+                  <img src="https://github.com/claire-1/personal-website-images/blob/master/succulent.jpg?raw=true">
                 </div>
                 <!-- <div class="brand">
                   Claire Adams
@@ -76,8 +79,12 @@
         <div>Claire Adams</div>
       </div>
       <!-- <div class="img-src" style="background-image: url('assets/img/grass_at_cliffs_of_moher.jpg')"></div> -->
-      <div class="img-src" style="background-image: url('assets/img/window_at_city_of_NYC.jpg')"></div>
-      <div class='img-src blur' style="background-image: url('assets/img/window_at_city_of_NYC_blur.jpg')"></div>
+      <div class="img-src"
+        style="background-image: url('https://github.com/claire-1/personal-website-images/blob/master/window.jpg?raw=true')">
+      </div>
+      <div class='img-src blur'
+        style="background-image: url('https://github.com/claire-1/personal-website-images/blob/master/window_blur.jpg?raw=true')">
+      </div>
     </div>
 
   </div>
@@ -102,16 +109,17 @@
             href="https://github.com/claire-1" target="_blank">github</a>.</p>
 
         <div class="row">
-          <!-- Project: Connect Four -->
+          <!-- Project: Github Metrics -->
           <div class="col-lg-6 mb-3 mb-lg-0">
-            <a href="https://github.com/claire-1/connect-four" target="_blank">
-              <div class="hover hover-5 img-rounded img-responsive"><img
-                  src="assets/img/diagonalConnectFourRedWinner.gif" alt="Connect Four Game Gif">
+            <a href="https://github.com/claire-1/github-metrics" target="_blank">
+              <div class="hover hover-5 img-rounded img-responsive"><img src="assets/img/bubbleChart.gif"
+                  alt="Connect Four Game Gif">
                 <div class="hover-overlay"></div>
                 <div class="hover-5-content">
                   <p class="hover-5-title text-uppercase font-weight-light mb-0 lead"><strong
-                      class="font-weight-bold text-over-image">Connect Four </strong></br><span class="small">
-                      Python, Pygame, Jupyter Notebook</span></p>
+                      class="font-weight-bold text-over-image">Github Metrics: Classifying Github Issues as
+                      Resolved or Unresolved using Naive Bayes </strong></br><span class="small">
+                      AI, Naive Bayes, Java, SQL, Github API, Docker, Bash</span></p>
                 </div>
               </div>
             </a>
@@ -177,6 +185,11 @@
 
 
     <!-- Articles -->
+    <!-- <h1>POSTS</h1>
+
+    <script>window.onload = function () { createFeed(document.querySelector(".posts"), "claire1", 4) }</script>
+    <div class="posts"></div> -->
+
 
 
     <!-- Art -->
@@ -236,6 +249,11 @@
           <div class="credits">
             <p>Starter bootstrap template from: <a href=http://gsdk.creative-tim.com>http://gsdk.creative-tim.com</a>
             </p>
+            <div class="credits">
+              Copyright
+              &copy;
+              <script>document.write(new Date().getFullYear())</script> Claire Adams
+            </div>
           </div>
         </div>
       </div>
@@ -262,5 +280,7 @@
 
 
 </script>
+
+
 
 </html>
