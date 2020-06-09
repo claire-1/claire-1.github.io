@@ -7,19 +7,51 @@ const api = 'https://dev.to/api';
  * @param {number} numberOfPosts - Number of posts to list. 
  */
 function createFeed(elem, username, numberOfPosts = 5) {
-    const feed = document.createElement('div');
+    var feed = document.createElement('div');
     feed.classList.add('dev-feed-list');
     getPosts(username)
         .then(function (posts) {
             posts.length = numberOfPosts;
             posts.forEach(function (post) {
-                const item = document.createElement('div');
-                item.classList.add('dev-feed-item');
-                const link = document.createElement('a');
-                link.href = post.url;
-                link.innerText = post.title;
-                item.appendChild(link);
-                feed.appendChild(item);
+                var col = document.createElement('col');
+                col.classList.add('col-lg-2');
+                col.classList.add('col-md-3');
+                col.classList.add('col-sm-4');
+                col.classList.add('col-xs-6');
+                var panel = document.createElement('div');
+                panel.classList.add('panel');
+                panel.classList.add('panel-default');
+
+                var panelBody = document.createElement('div');
+                panelBody.classList.add('panel-body');
+                panel.appendChild(panelBody);
+
+                var panelBodyImage = document.createElement('img');
+                panelBodyImage.src = post.cover_image;
+                panelBodyImage.alt = "Post cover image";
+                panelBodyImage.classList.add('img-responsive');
+                panelBodyImage.classList.add('center-block');
+                panelBody.appendChild(panelBodyImage);
+
+                var panelFooter = document.createElement('div');
+                panelFooter.classList.add('panel-footer');
+                panel.appendChild(panelFooter);
+
+                var panelFooterHeader = document.createElement('h3');
+                var panelFooterLink = document.createElement('a');
+                panelFooterLink.href = post.url;
+                panelFooterLink.innerText = post.title;
+                panelFooterHeader.appendChild(panelFooterLink);
+                panelFooter.appendChild(panelFooterHeader);
+
+                var panelFooterDesc = document.createElement('p');
+                panelFooterDesc.textContent = post.description;
+                panelFooter.appendChild(panelFooterDesc);
+                var panelFooterTags = document.createElement('p');
+                panelFooterTags.textContent = post.tags;
+                panelFooter.appendChild(panelFooterTags);
+
+                feed.appendChild(panel);
             });
             elem.appendChild(feed);
         });
