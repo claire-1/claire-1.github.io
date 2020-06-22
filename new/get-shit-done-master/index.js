@@ -8,16 +8,15 @@ const api = 'https://dev.to/api';
  */
 function createFeed(elem, username, numberOfPosts = 5) {
     var feed = document.createElement('div');
-    feed.classList.add('dev-feed-list');
+    feed.classList.add('row');
     getPosts(username)
         .then(function (posts) {
             posts.length = numberOfPosts;
             posts.forEach(function (post) {
                 var col = document.createElement('col');
-                col.classList.add('col-lg-2');
+                col.classList.add('col-lg-6');
                 col.classList.add('col-md-3');
                 col.classList.add('col-sm-4');
-                col.classList.add('col-xs-6');
                 var panel = document.createElement('div');
                 panel.classList.add('panel');
                 panel.classList.add('panel-default');
@@ -51,7 +50,8 @@ function createFeed(elem, username, numberOfPosts = 5) {
                 panelFooterTags.textContent = post.tags;
                 panelFooter.appendChild(panelFooterTags);
 
-                feed.appendChild(panel);
+                col.appendChild(panel);
+                feed.appendChild(col);
             });
             elem.appendChild(feed);
         });

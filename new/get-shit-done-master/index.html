@@ -91,10 +91,10 @@
 
   <div class="main">
     <div class="space"></div>
-    <div id="Projects" class="container tim-container">
+    <div class="container tim-container">
 
       <!-- Projects -->
-      <div class="py-5">
+      <div class="py-5" id="Projects">
         <h3 class="font-weight-bold mb-0">Projects</h3>
         <p class="font-italic text-muted mb-4">Here is a selection of my coding projects. View more on my <a
             href="https://github.com/claire-1" target="_blank">github</a>.</p>
@@ -171,23 +171,27 @@
 
 
       <!-- Articles -->
-      <h1>Articles</h1>
-      <p class="font-italic text-muted mb-4">Here is a selection of my software engineering related articles. View more
-        on my <a href="https://dev.to/clairea" target="_blank">dev.to</a>.</p>
+      <div id="Articles">
+        <h1>Articles</h1>
+        <p class="font-italic text-muted mb-4">Here is a selection of my software engineering related articles. View
+          more
+          on my <a href="https://dev.to/clairea" target="_blank">dev.to</a>.</p>
 
-      <script>window.onload = function () { createFeed(document.querySelector(".posts"), "clairea", 4) }</script>
-      <div class=row>
+        <script>window.onload = function () { createFeed(document.querySelector(".posts"), "clairea", 4) }</script>
+        <!-- <div class="row"> -->
 
         <div class="posts">
           <!--Posts will be displayed here-->
         </div>
+        <!-- </div> -->
+
+        <!-- Art -->
+
+        <div class="space-30"></div>
+
       </div>
-
-      <!-- Art -->
-
-      <div class="space-30"></div>
-
     </div>
+    <!-- End of articles -->
   </div>
   <!-- end container -->
 
@@ -207,7 +211,7 @@
       </ol>
 
       <!-- Wrapper for slides -->
-      <div class="carousel-inner">
+      <!-- <div class="carousel-inner">
         <div class="item active">
           <img src="assets/img/carousel_blue.png" alt="Awesome Image">
         </div>
@@ -217,15 +221,15 @@
         <div class="item">
           <img src="assets/img/carousel_red.png" alt="Awesome Image">
         </div>
-      </div>
+      </div> -->
 
       <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+      <!-- <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
         <span class="fa fa-angle-left"></span>
       </a>
       <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
         <span class="fa fa-angle-right"></span>
-      </a>
+      </a> -->
     </div>
   </div> <!-- end carousel -->
 
