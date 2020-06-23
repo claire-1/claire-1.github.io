@@ -3,7 +3,7 @@ a{
     color:orange;
 }
 
-.tim-container{
+.white-container{
     background: #ffffff;
 
 }
@@ -501,3 +501,7 @@ a{
   .navbar-header {
       background-color: #7eacb4;
   } */
+
+  .post-tags{
+      color:#2f847c;
+  }

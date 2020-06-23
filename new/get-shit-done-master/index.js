@@ -47,6 +47,7 @@ function createFeed(elem, username, numberOfPosts = 5) {
                 panelFooterDesc.textContent = post.description;
                 panelFooter.appendChild(panelFooterDesc);
                 var panelFooterTags = document.createElement('p');
+                panelFooterTags.classList.add('post-tags');
                 panelFooterTags.textContent = post.tags;
                 panelFooter.appendChild(panelFooterTags);
 
