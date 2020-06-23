@@ -26,9 +26,14 @@
 
   <!-- Get dev posts -->
   <script src="index.js"></script>
+  <script>
+    var shiftWindow = function () { scrollBy(0, -75) };
+    window.addEventListener("hashchange", shiftWindow);
+    function load() { if (window.location.hash) shiftWindow(); }
+  </script>
 </head>
 
-<body>
+<body onload="load()">
   <div id="navbar-full">
     <div class="container">
       <nav class="navbar navbar-ct-orange navbar-transparent navbar-fixed-top" role="navigation">
@@ -90,6 +95,7 @@
       <div class="py-5" id="About">
         <p class="font-italic text-center mb-4">Hello! My name is Claire Adams, and I am a software engineer, amoung
           other things. This is my personal website to show off some of my work!</p>
+        <hr />
       </div>
 
       <!-- Projects -->
