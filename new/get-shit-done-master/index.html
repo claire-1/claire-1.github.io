@@ -18,6 +18,7 @@
   <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
   <link href="assets/css/gsdk.css" rel="stylesheet" />
   <link href="assets/css/demo.css" rel="stylesheet" />
+  <link href="assets/css/bootstrap-social.css" rel="stylesheet">
 
   <!--     Font Awesome     -->
   <link href="bootstrap3/css/font-awesome.css" rel="stylesheet">
@@ -57,9 +58,11 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+              <li><a href="#About">About</a></li>
               <li><a href="#Projects">Projects</a></li>
               <li><a href="#Articles">Articles</a></li>
-              <li><a href="#Art">Art</a></li>
+              <li><a href="#Contact">Contact</a></li>
+
 
               <!-- <li><a href="http://www.creative-tim.com/product/get-shit-done-kit"
                   class="btn btn-round btn-default">Download</a></li> -->
@@ -92,6 +95,11 @@
   <div class="main">
     <div class="space"></div>
     <div class="container tim-container">
+      <!-- About -->
+      <div class="py-5" id="About">
+        <p class="font-italic text-center mb-4">Hello! My name is Claire Adams, and I am a software engineer, amoung
+          other things. This is my personal website to show off some of my work!</p>
+      </div>
 
       <!-- Projects -->
       <div class="py-5" id="Projects">
@@ -172,26 +180,43 @@
 
       <!-- Articles -->
       <div id="Articles">
-        <h1>Articles</h1>
+        <div class="space-30"></div>
+        <h3 class="font-weight-bold mb-0">Articles</h3>
         <p class="font-italic text-muted mb-4">Here is a selection of my software engineering related articles. View
           more
           on my <a href="https://dev.to/clairea" target="_blank">dev.to</a>.</p>
 
         <script>window.onload = function () { createFeed(document.querySelector(".posts"), "clairea", 4) }</script>
-        <!-- <div class="row"> -->
+        <div class="row">
 
-        <div class="posts">
-          <!--Posts will be displayed here-->
+          <div class="posts">
+            <!--Posts will be displayed here-->
+          </div>
         </div>
-        <!-- </div> -->
 
-        <!-- Art -->
 
-        <div class="space-30"></div>
+      </div>
+      <!-- End of articles -->
+
+      <!-- Contact -->
+      <div class="py-5" id="Contact">
+        <h3 class="font-weight-bold mb-0">Contact</h3>
+        <!-- Buttons -->
+        <div class="text-center">
+          <a class="btn btn-lg btn-social-icon btn-github" href="https://github.com/claire-1" target="__blank">
+            <span class="fa fa-github"></span>
+          </a>
+          <a class="btn btn-lg btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/clairebadams/"
+            target="__blank">
+            <span class="fa fa-linkedin"></span>
+          </a>
+        </div>
 
       </div>
     </div>
-    <!-- End of articles -->
+
+
+    <div class="space-30"></div>
   </div>
   <!-- end container -->
 
@@ -204,11 +229,11 @@
     -->
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
-      <ol class="carousel-indicators">
+      <!-- <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
+      </ol> -->
 
       <!-- Wrapper for slides -->
       <!-- <div class="carousel-inner">
@@ -244,13 +269,9 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <div class="credits">
-            <p>Starter bootstrap template from: <a href=http://gsdk.creative-tim.com>http://gsdk.creative-tim.com</a>
-            </p>
-            <div class="credits">
-              Copyright
-              &copy;
-              <script>document.write(new Date().getFullYear())</script> Claire Adams
-            </div>
+            Copyright
+            &copy;
+            <script>document.write(new Date().getFullYear())</script> Claire Adams
           </div>
         </div>
       </div>
