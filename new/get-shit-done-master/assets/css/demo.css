@@ -1,41 +1,9 @@
-
 a{
     color:orange;
 }
-
 .white-container{
     background: #ffffff;
 
-}
-.tim-row{
-    margin-bottom: 20px;
-}
-.tim-title{
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-.tim-typo{
-    padding-left: 25%;
-    margin-bottom: 40px;
-    position: relative;   
-}
-.tim-typo .tim-note{
-    bottom: 10px;
-    color: #c0c1c2;
-    display: block;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 13px;
-    left: 0;
-    margin-left: 20px;
-    position: absolute;
-    width: 260px;
-}
-.tim-row{
-    margin-top: 50px;
-}
-.tim-row h3{
-    margin-top: 0;
 }
 .switch{
     margin-right: 20px;
@@ -58,41 +26,6 @@ a{
 .main{
     background-color: #FFFFFF;
 }
-.navigation-example{
-    height: 660px;
-    background-image: url('../img/bg.jpg');
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-}
-#notifications{
-    background-color: #FFFFFF;
-    display: block;
-    width: 100%;
-    position: relative;
-}
-.tim-note{
-    text-transform: capitalize;
-}
-
-.card{
-    background-color: #FFFFFF;
-    padding: 10px 0 20px;
-    width: 100%;
-}
-.card h3{
-    margin-bottom: 20px;
-}
-.card button{
-    margin-top: 30px;
-}
-.subscribe-form{
-    padding-top: 20px;
-}
-.subscribe-form .form-control{
-    
-}
-
 .space-100{
     height: 100px;
     display: block;
@@ -116,9 +49,6 @@ a{
     background-attachment: fixed;
     position: relative;
 }
-.heart{
-    color: #FF3B30;
-}
 .footer .overlayer{
     background-color: rgba(27, 27, 27, 0.7);
     position: relative;
@@ -132,33 +62,6 @@ a{
 .footer .credits a{
     color: #FFFFFF;
 }
-.social-share{
-    float: left;
-    margin-right: 8px;
-}
-.social-share a{
-    color: #FFFFFF;
-}
-#subscribe_email{
-    border-radius: 0;
-    border-left: 0;
-    border-right: 0;
-}
-.pick-class-label{
-    border-radius: 8px;
-    color: #ffffff;
-    cursor: pointer;
-    display: inline;
-    font-size: 75%;
-    font-weight: bold;
-    line-height: 1;
-    margin-right: 10px;
-    padding: 15px 23px;
-    text-align: center;
-    vertical-align: baseline;
-    white-space: nowrap;
-}
-
 .parallax-pro{
   width:100%;
   display: block;
@@ -275,13 +178,6 @@ a{
     font-weight: 300;
     background-color: #ff9500;
 }
-.social-share{
-    margin-right: 0px;
-    margin-top: 10px;
-}
-.footer h4{
-    margin: 0px 0 20px;
-}
 .space-30{
     height: 30px;
     display: block;
@@ -299,9 +195,6 @@ a{
     margin: 10px;
     line-height: 40px;
 }
-.social-line{
-    padding: 5px 0;
-}
 .section-gray{
     padding: 10px 0;
     background-color: #EEE;
@@ -310,9 +203,6 @@ a{
     margin: 0;
     line-height: 40px;
 }
-
-/*   EXTRA SHIT  */
-/* @cristina: fisier singular, folosit pentru efectul de blur la parallax in header */
 
 .blurred-container{
   position:relative;
@@ -404,8 +294,7 @@ a{
     margin-bottom: 25px;
 }
 
-
-/* DEMO GENERAL ============================== */
+/* For project hover effect and text */
 .hover {
     overflow: hidden;
     position: relative;
@@ -435,7 +324,6 @@ a{
     z-index: 99;
   }
 
-  /* DEMO 5 ============================== */
 .hover-5::after {
     content: '';
     width: 100%;
@@ -451,7 +339,7 @@ a{
   
   .hover-5 .hover-overlay {
     background: rgba(0, 0, 0, 0.05);
-  } /* TODO here remove this to remove darkening of images */
+  } 
   
   .hover-5-title {
     position: absolute;
@@ -497,11 +385,7 @@ a{
       padding-right: 1px;
   }
   
-/* 
-  .navbar-header {
-      background-color: #7eacb4;
-  } */
-
   .post-tags{
       color:#2f847c;
   }
+  /* end of for project hover effect and text */
