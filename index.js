@@ -40,6 +40,7 @@ function createFeed(elem, username, numberOfPosts = 5) {
                 var panelFooterLink = document.createElement('a');
                 panelFooterLink.href = post.url;
                 panelFooterLink.innerText = post.title;
+                panelFooterLink.target = "__blank";
                 panelFooterHeader.appendChild(panelFooterLink);
                 panelFooter.appendChild(panelFooterHeader);
 
